@@ -35,3 +35,11 @@ TODO
 ----
 
 Cache cleaning!
+
+
+Legalese
+--------
+
+Copyright 2011, 2012 Efficient Cloud Ltd.
+
+Released under the [MIT license](http://www.opensource.org/licenses/mit-license.php).
