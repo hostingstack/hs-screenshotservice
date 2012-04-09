@@ -1,0 +1,10 @@
+#!/bin/sh
+echo starting
+export RACK_ENV=production
+cd /usr/lib/hs/screenshotservice
+mkdir run cache
+chown nobody run cache
+rm -f webkit2png.log
+ln -s /dev/null webkit2png.log
+exec 2>&1
+exec setuidgid nobody stdbuf -o0 -e0 ./bin/unicorn -c ./config/unicorn.rb

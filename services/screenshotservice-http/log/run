@@ -1,0 +1,5 @@
+#!/bin/sh
+
+LOGPREFIX=hs-$(basename $(dirname $PWD))
+
+exec logger -t $LOGPREFIX -p daemon.info
